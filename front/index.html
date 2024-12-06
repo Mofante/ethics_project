@@ -10,29 +10,99 @@
     <div class="container">
         <h1>Digital Carbon Footprint Calculator</h1>
         <p>Help us understand your weekly online activity to estimate its environmental impact.</p>
-        
-        <div class="slider-container">
-            <label for="socialMedia">Social Media (hours/week)</label>
-            <input type="range" min="0" max="20" value="0" class="slider" id="socialMedia">
-            <div class="value-display" id="socialMediaValue">0 hours</div>
-        </div>
+        <div id="sliders">
+            
+            <div class="slider-container">
+                <label for="youtubeTime">YouTube (hours/week)</label>
+                <input type="range" min="0" max="20" value="0" class="slider" id="youtubeTime">
+                <div class="value-display" id="youtubeTimeValue">0 hours</div>
+            </div>
 
-        <div class="slider-container">
-            <label for="streaming">Video Streaming (hours/week)</label>
-            <input type="range" min="0" max="20" value="0" class="slider" id="streaming">
-            <div class="value-display" id="streamingValue">0 hours</div>
-        </div>
+            <div class="slider-container">
+                <label for="tiktokTime">TikTok (hours/week)</label>
+                <input type="range" min="0" max="20" value="0" class="slider" id="tiktokTime">
+                <div class="value-display" id="tiktokTimeValue">0 hours</div>
+            </div>
 
-        <div class="slider-container">
-            <label for="gaming">Online Gaming (hours/week)</label>
-            <input type="range" min="0" max="20" value="0" class="slider" id="gaming">
-            <div class="value-display" id="gamingValue">0 hours</div>
-        </div>
+            <div class="slider-container">
+                <label for="instagramTime">Instagram (hours/week)</label>
+                <input type="range" min="0" max="20" value="0" class="slider" id="instagramTime">
+                <div class="value-display" id="instagramTimeValue">0 hours</div>
+            </div>
 
-        <div class="slider-container">
-            <label for="videoConference">Video Conferencing (hours/week)</label>
-            <input type="range" min="0" max="20" value="0" class="slider" id="videoConference">
-            <div class="value-display" id="videoConferenceValue">0 hours</div>
+            <div class="slider-container">
+                <label for="facebookTime">Facebook (hours/week)</label>
+                <input type="range" min="0" max="20" value="0" class="slider" id="facebookTime">
+                <div class="value-display" id="facebookTimeValue">0 hours</div>
+            </div>
+
+            <div class="slider-container">
+                <label for="snapchatTime">Snapchat (hours/week)</label>
+                <input type="range" min="0" max="20" value="0" class="slider" id="snapchatTime">
+                <div class="value-display" id="snapchatTimeValue">0 hours</div>
+            </div>
+
+            <div class="slider-container">
+                <label for="redditTime">Reddit (hours/week)</label>
+                <input type="range" min="0" max="20" value="0" class="slider" id="redditTime">
+                <div class="value-display" id="redditTimeValue">0 hours</div>
+            </div>
+
+
+            <div class="slider-container">
+                <label for="pinterestTime">Pinterest (hours/week)</label>
+                <input type="range" min="0" max="20" value="0" class="slider" id="pinterestTime">
+                <div class="value-display" id="pinterestTimeValue">0 hours</div>
+            </div>
+
+            <div class="slider-container">
+                <label for="linkedinTime">LinkedIn (hours/week)</label>
+                <input type="range" min="0" max="20" value="0" class="slider" id="linkedinTime">
+                <div class="value-display" id="linkedinTimeValue">0 hours</div>
+            </div>
+
+            <div class="slider-container">
+                <label for="twitterTime">Twitter (hours/week)</label>
+                <input type="range" min="0" max="20" value="0" class="slider" id="twitterTime">
+                <div class="value-display" id="twitterTimeValue">0 hours</div>
+            </div>
+
+            <div class="slider-container">
+                <label for="twitchTime">Twitch (hours/week)</label>
+                <input type="range" min="0" max="20" value="0" class="slider" id="twitchTime">
+                <div class="value-display" id="twitchTimeValue">0 hours</div>
+            </div>
+
+            <div class="slider-container">
+                <label for="netflixTime">Netflix (hours/week)</label>
+                <input type="range" min="0" max="20" value="0" class="slider" id="netflixTime">
+                <div class="value-display" id="netflixTimeValue">0 hours</div>
+            </div>
+
+            <div class="slider-container">
+                <label for="disneyplusTime">Disney+ (hours/week)</label>
+                <input type="range" min="0" max="20" value="0" class="slider" id="disneyplusTime">
+                <div class="value-display" id="disneyplusTimeValue">0 hours</div>
+            </div>
+
+            <div class="slider-container">
+                <label for="textCount">Text Messages Sent (texts/week)</label>
+                <input type="range" min="0" max="500" value="0" class="slider" id="textCount">
+                <div class="value-display" id="textCountValue">0 texts</div>
+            </div>
+
+            <div class="slider-container">
+                <label for="emailCount">Emails Sent or Received (emails/week)</label>
+                <input type="range" min="0" max="500" value="0" class="slider" id="emailCount">
+                <div class="value-display" id="emailCountValue">0 emails</div>
+            </div>
+
+            <div class="slider-container">
+                <label for="googleSearchCount">Google Searches (searches/week)</label>
+                <input type="range" min="0" max="500" value="0" class="slider" id="googleSearchCount">
+                <div class="value-display" id="googleSearchCountValue">0 searches</div>
+            </div>
+            
         </div>
 
         <button onclick="calculateAndRedirect()">Calculate My Impact</button>
