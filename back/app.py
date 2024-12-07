@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import sqlite3
 from models import Record
+from models import Response
 
 
 def create_connection():
@@ -31,6 +32,15 @@ def create_table():
         google_searches_count INTEGER NOT NULL
     )
     """)
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS responses (
+        expected_results TEXT NOT NULL,
+        change_behavior TEXT NOT NULL,
+        surprising_activity TEXT NOT NULL,
+        motivation TEXT NOT NULL,
+        total_emissions REAL NOT NULL
+    )
+    """)
     connection.commit()
     connection.close()
 
@@ -53,6 +63,20 @@ def create_record(record: Record):
     connection.commit()
     connection.close()
 
+def create_response(response: Response):
+    connection = create_connection()
+    cursor = connection.cursor()
+    cursor.execute("""
+        INSERT INTO responses (
+            expected_results, change_behavior, surprising_activity, motivation, total_emissions
+        ) 
+        VALUES (?, ?, ?, ?, ?)
+    """,
+    (
+        response.expected_results, response.change_behavior, response.surprising_activity, response.motivation, response.total_emissions
+    ))
+    connection.commit()
+    connection.close()
 
 create_table()
 app = FastAPI()
@@ -74,3 +98,8 @@ def get_root():
 def post_record(record: Record):
     create_record(record)
     return record
+
+@app.post("/survey/", response_model=Response)
+def post_survey(response: Response):
+    create_response(response)
+    return response

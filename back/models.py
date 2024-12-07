@@ -17,3 +17,10 @@ class Record(BaseModel):
     text_count: int
     emails_count: int
     google_searches_count: int
+
+class Response(BaseModel):
+    expected_results: str
+    change_behavior: str
+    surprising_activity: str
+    motivation: str
+    total_emissions: float
