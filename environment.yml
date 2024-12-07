@@ -1,9 +1,0 @@
-name: ethics
-channels:
-  - defaults
-dependencies:
-  - fastapi
-  - uvicorn
-  - watchdog
-  - conda-forge::livereload
-prefix: /opt/anaconda3/envs/ethics
