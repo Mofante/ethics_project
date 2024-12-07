@@ -1,0 +1,140 @@
+:root {
+    --primary-green: #2ecc71;
+    --background-light: #f4f4f4;
+    --text-dark: #2c3e50;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: var(--primary-green);
+    margin-bottom: 20px;
+}
+
+.slider-container {
+    margin-bottom: 20px;
+}
+
+.slider-container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.slider {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.value-display {
+    text-align: center;
+    font-weight: bold;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-green);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+#resultPage {
+    display: none;
+}
+
+.result-section {
+    background-color: #e8f5e9;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.tip {
+    background-color: #f1f8e9;
+    border-left: 4px solid var(--primary-green);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+/* Add these to your existing styles.css */
+.survey-question {
+    margin-bottom: 20px;
+}
+
+.survey-question label {
+    display: block;
+    font-weight: bold;
+}
+
+.radio-group {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+.survey-question select, 
+.survey-question textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.submit-survey {
+    background-color: var(--primary-green);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-survey:hover {
+    background-color: #27ae60;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--primary-green);
+    text-decoration: none;
+    font-weight: bold;
+}

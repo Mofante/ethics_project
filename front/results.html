@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Digital Carbon Footprint</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Digital Carbon Footprint</h1>
+        
+        <div class="result-section">
+            <h2>Estimated Carbon Emissions</h2>
+            <p id="totalEmissions">Total CO2: 0 kg</p>
+        </div>
+
+        <div class="result-section">
+            <h2>Breakdown</h2>
+            <p id="breakdownDetails">Details of your emissions</p>
+        </div>
+
+        <div class="result-section personalized-tips">
+            
+        </div>
+        
+
+        <div>
+            <h2>Eco-Friendly Tips</h2>
+            <div class="tip">
+                <strong>Tip 1:</strong> Reduce video streaming quality when possible
+            </div>
+            <div class="tip">
+                <strong>Tip 2:</strong> Turn off devices completely when not in use
+            </div>
+            <div class="tip">
+                <strong>Tip 3:</strong> Use energy-efficient devices and modes
+            </div>
+            <div class="tip">
+                <strong>Tip 4:</strong> Delete old emails and clean up storage to reduce server loads.
+            </div>
+            <div class="tip">
+                <strong>Tip 5:</strong> Use Wi-Fi instead of mobile data—it's more energy-efficient.
+            </div>
+            <div class="tip">
+                <strong>Tip 6:</strong> Use search engines like <strong>Ecosia</strong> and <strong>Lilo</strong> to do your searches. These are more eco-friendly browsers.
+                For example, Ecosia dedicates 100% of its profit to the planet.
+            </div>
+        </div>
+
+        <div id="survey">
+            <h2>Help Us Improve</h2>
+            <form id="researchSurvey">
+                <div class="survey-question">
+                    <label>Were these results similar to what you expected?</label>
+                    <div class="radio-group">
+                        <input type="radio" id="expectedYes" name="expectedResults" value="yes">
+                        <label for="expectedYes">Yes</label>
+                        <input type="radio" id="expectedNo" name="expectedResults" value="no">
+                        <label for="expectedNo">No</label>
+                    </div>
+                </div>
+
+                <div class="survey-question">
+                    <label>Are you likely to change your online behavior after seeing these results?</label>
+                    <div class="radio-group">
+                        <input type="radio" id="changeYes" name="changeBehavior" value="yes">
+                        <label for="changeYes">Yes</label>
+                        <input type="radio" id="changeNo" name="changeBehavior" value="no">
+                        <label for="changeNo">No</label>
+                        <input type="radio" id="changeMaybe" name="changeBehavior" value="maybe">
+                        <label for="changeMaybe">Maybe</label>
+                    </div>
+                </div>
+
+                <div class="survey-question">
+                    <label>Which activity surprised you most about its carbon emissions?</label>
+                    <select name="surprisingActivity" id="surprisingActivity">
+                        <option value="">Select an activity</option>
+                        <option value="socialMedia">Social Media</option>
+                        <option value="videoStreaming">Video Streaming</option>
+                        <option value="texting">Texting</option>
+                        <option value="emails">Emails</option>
+                        <option value="googleSearches">Google Searches</option>
+                        <option value="none">None of them</option>
+                    </select>
+                </div>
+
+                <div class="survey-question">
+                    <label>What motivated you to use this carbon footprint calculator?</label>
+                    <textarea name="motivation" id="motivation" rows="3" placeholder="Share your thoughts..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-survey">Submit Survey</button>
+            </form>
+        </div>
+
+        <div id="thankYou" style="display: none;">
+            <h2>Thank You!</h2>
+            <p>Your feedback helps us improve our research and understanding of digital carbon footprints.</p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
