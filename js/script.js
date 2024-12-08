@@ -243,7 +243,7 @@ function getFeedbackForCategory(category, usage, isTikTokUsed = false) {
         streaming: { low: 7, high: 14 },
         socialMedia: { low: 3.5, high: 7 },
         messaging: { low: 140, high: 700 },
-        emails: { low: 140, high: 350 },
+        emails: { low: 70, high: 250 },
         searches: { low: 70, high: 210 }
     };
 
